@@ -29,7 +29,7 @@ router.post("/:id", verifyTokenAndAuthorization, async (req, res) => {
     );
     res.status(200).json(updatedUser);
   } catch (err) {
-    console.log("hello");
+    console.log(err);
     res.status(500).json(err);
   }
 });
